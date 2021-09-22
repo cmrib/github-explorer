@@ -26,7 +26,7 @@ export function RepositoryList() {
         })
         }
       </ul>
-    </section>
 
+    </section>
   )
 }
