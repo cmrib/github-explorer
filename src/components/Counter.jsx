@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+// imutabilidade 
+
 
 export function Counter() {
 
