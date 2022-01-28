@@ -3,7 +3,6 @@ import { useState, useEffect } from "react"
 import '../styles/repositories.scss'
 import '../styles/global.scss'
 
-
 interface Repository {
   name: string;
   description: string;
@@ -15,12 +14,11 @@ export function RepositoryList() {
   const [repositories, setRepositories] = useState<Repository[]>([]);
 
   useEffect(() => {
-    fetch('https://api.github.com/orgs/rocketseat/repos')
+    fetch('https://api.github.com/users/cmrib/repos')
       .then(response => response.json())
       .then(data => setRepositories(data))
   }, [])
   // cuidado para nao deixar sem o segundo parâmetro*
-
 
   return (
     <section className="repository-list">
